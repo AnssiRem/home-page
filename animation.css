@@ -1,0 +1,31 @@
+@keyframes enter1 {
+    0% {
+        color: #000000;
+        color: rgba(255, 255, 255, 0.00);
+        transform: translate(-300px)
+    }
+
+    100% {
+        color: #ffffff;
+        transform: translate(0px)
+    }
+}
+
+@keyframes enter2 {
+    0% {
+        color: #000000;
+        color: rgba(255, 255, 255, 0.00);
+        transform: translate(-300px)
+    }
+
+    20% {
+        color: #000000;
+        color: rgba(255, 255, 255, 0.00);
+        transform: translate(-300px)
+    }
+
+    100% {
+        color: #ffffff;
+        transform: translate(0px)
+    }
+}

@@ -1,0 +1,28 @@
+.portfolio-grid {
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-columns: repeat(auto-fill, minmax(442px, 1fr));
+    width: 100%;
+}
+
+.portfolio-item {
+    background-color: #222222;
+}
+
+.portfolio-text {
+    margin: 4px;
+    padding: 4px;
+}
+
+    .portfolio-text h3 {
+        margin: 0;
+    }
+
+    .portfolio-text p {
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    .portfolio-text a {
+        color: #bbbbbb;
+    }
