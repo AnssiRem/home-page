@@ -1,116 +1,83 @@
-body {
-    background-color: #000000;
-    background-image: linear-gradient(to bottom left, #000000, #121212);
-    color: #ffffff;
+body, footer {
     font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    min-height: 100vh;
 }
 
-header {
-    margin: 0 auto;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Varela Round', sans-serif;
 }
 
-footer {
-    left: 0;
+body, html {
+    height: 100%;
     background-color: #111111;
-    bottom: 0;
     color: white;
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    margin: 0;
-    position: fixed;
-    width: 100vw;
+    line-height: 1.8;
 }
-
-h1 {
-    color: #ffffff;
-    font-family: 'Varela Round', sans-serif;
-}
-
-    h1 a {
-        text-decoration: none;
-        color: #ffffff;
-    }
-
-h2 {
-    color: #ffffff;
-    font-family: 'Varela Round', sans-serif;
-}
-
-    h2 a {
-        text-decoration: none;
-        color: #ffffff;
-    }
 
 p {
     text-align: justify;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
-img {
-    max-width: 100%;
+/* Create a Parallax Effect */
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-video {
-    max-width: 100%;
+/* First image (Logo. Full height) */
+
+.bgimg-1 {
+    background: rgb(17, 17, 17);
+    background: linear-gradient(90deg, rgba(17, 17, 17, 1) 0%, rgba(0, 0, 0, 1) 33%, rgba(0, 0, 0, 1) 66%, rgba(17, 17, 17, 1) 100%);
+    min-height: 100%;
 }
 
-nav {
-    background-color: #111111;
-    display: block;
+/* Second image (Portfolio) */
+
+.bgimg-2 {
+    background: rgb(17, 17, 17);
+    background: linear-gradient(90deg, rgba(17, 17, 17, 1) 0%, rgba(0, 0, 0, 1) 33%, rgba(0, 0, 0, 1) 66%, rgba(17, 17, 17, 1) 100%);
+    min-height: 400px;
 }
 
-    nav ul {
-        list-style-type: none;
-        margin: 0 auto;
-        padding: 0;
-    }
+/* Third image (Contact) */
 
-li {
-    float: left;
+.bgimg-3 {
+    background: rgb(17, 17, 17);
+    background: linear-gradient(90deg, rgba(17, 17, 17, 1) 0%, rgba(0, 0, 0, 1) 33%, rgba(0, 0, 0, 1) 66%, rgba(17, 17, 17, 1) 100%);
+    min-height: 400px;
 }
 
-    li a {
-        border-right: solid #ffffff 1px;
-        color: #ffffff;
-        display: block;
-        margin: 8px 0;
-        padding: 8px 16px;
-        text-align: center;
-        text-transform: uppercase;
-        text-decoration: none;
-    }
-
-        li a:hover {
-            background-color: #ffffff;
-            color: #000000;
-        }
-
-.contents {
-    margin: 0 auto;
-    max-width: 900px;
+.w3-wide {
+    letter-spacing: 10px;
 }
 
-.centered {
-    left: 50%;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 100vw;
+.w3-hover-opacity {
+    cursor: pointer;
 }
 
-.current {
-    background-color: #333333;
-    color: #ffffff;
+/* Portfolio items */
+
+.pitem {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    padding: 4px;
 }
 
 .social {
-    display: inline-flex;
     max-height: 120px;
 }
 
-.table {
-    background-color: #111111;
-    display: table;
+/* Turn off parallax scrolling for tablets and phones */
+
+@media only screen and (max-device-width: 1600px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+        min-height: 400px;
+    }
 }
