@@ -1,0 +1,438 @@
+﻿<!DOCTYPE html>
+<title>Anssi Remes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="animation.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round" rel="stylesheet">
+
+<html>
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-white w3-hide-medium w3-hide-large w3-right"
+               href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                &#9776
+            </a>
+            <a href="#home" class="w3-bar-item w3-button">HOME</a>
+            <a href="#bio" class="w3-bar-item w3-button w3-hide-small"> BIO</a>
+            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"> PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small"> CONTACT</a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-dark-gray w3-hide w3-hide-large w3-hide-medium">
+            <a href="#bio" class="w3-bar-item w3-button" onclick="toggleFunction()">BIO</a>
+            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <h1 style="animation-name: enter1; animation-duration: 1s; animation-timing-function: ease; text-align: center;">
+                Anssi Remes
+            </h1>
+            <h2 style="animation-name: enter2; animation-duration: 1s; animation-timing-function: ease; text-align: center;">
+                Game Developer
+            </h2>
+        </div>
+    </div>
+
+
+    <!-- ██████  ██  ██████
+         ██   ██ ██ ██    ██
+         ██████  ██ ██    ██
+         ██   ██ ██ ██    ██
+         ██████  ██  ██████   -->
+
+    <div class="w3-content w3-container w3-padding-64" id="bio">
+        <h3 class="w3-center">BIO</h3>
+        <h4 class="w3-center">Anssi Remes – Game Developer</h4>
+        <div class="w3-padding-large">
+            <p>
+                I am a Game Developer with a lifelong passion for video games and half decade long
+                professional career in making them. During my youth I was near constantly dabbling with
+                making my own gameplay experiences starting early with Flash 8 and its Action Script
+                and later mapping for Source games using the Hammer editor.
+            </p>
+            <p>
+                Video games perfectly combine all of my interests: mathematics, graphics, music and most
+                importantly storytelling. Becoming fully aware of this in my early life I decided to
+                pursue an education relating to them in Kajaani University of Applied Sciences and
+                mained my studies in what I believe to be the fundamental part of interactive software
+                development — programming. I graduated in 2020 and have applied my skills ever since,
+                gorging on learnings and experience about making the best games.
+            </p>
+        </div>
+        <div class="w3-row">
+            <div class="w3-col m5 w3-center w3-padding-large">
+                <img src="Image/bio/bio.jpg" style="margin: auto;" class="w3-round w3-image" alt="It me!">
+            </div>
+            <div class="w3-col m7 w3-padding-large">
+                <h4>Professional Experience:</h4>
+                <ul>
+                    <li>
+                        <b>Game Programmer</b>, <i>Critical&nbspForce</i>. 2022&nbsp-&nbsppresent
+                        <ul>
+                            <li><a href="https://tumbletroopers.com/">Tumble Troopers 🔗</a></li>
+                            <li><a href="https://criticalopsgame.com/">Critical Ops 🔗</a>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Game Developer</b>, <i>BON&nbspGames</i>. 2021&nbsp-&nbsp2022
+                        <ul>
+                            <li><a href="https://transitkingtycoon.com/">Transit King Tycoon 🔗</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <h4>Education:</h4>
+                <ul>
+                    <li>
+                        Bachelor's Degree in Business Information Technology, <i>Kajaani&nbspUniversity&nbspof&nbspApplied&nbspSciences</i>, 2017&nbsp-&nbsp2020
+                    </li>
+                </ul>
+                <h4>Languages:</h4>
+                <ul>
+                    <li>
+                        w/ Professional Experience:
+                        <ul>
+                            <li>C#, C++, PHP, Python</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Other:
+                        <ul>
+                            <li>JavaScript</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h4>Software:</h4>
+                <ul>
+                    <li>Android Studio, Git, JetBrains Rider, MS Office, MS Visual Studio, Unity, Unreal Engine</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ██████   ██████  ██████  ████████ ███████  ██████  ██      ██  ██████
+         ██   ██ ██    ██ ██   ██    ██    ██      ██    ██ ██      ██ ██    ██
+         ██████  ██    ██ ██████     ██    █████   ██    ██ ██      ██ ██    ██
+         ██      ██    ██ ██   ██    ██    ██      ██    ██ ██      ██ ██    ██
+         ██       ██████  ██   ██    ██    ██       ██████  ███████ ██  ██████   -->
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container">
+        <div class="w3-display-middle">
+            <h1 class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</h1>
+        </div>
+    </div>
+
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+        <h3 class="w3-center">PROFESSIONAL PROJECTS</h3>
+        <h4><a href="https://tumbletroopers.com/">Tumble Troopers 🔗</a>, <i>Critical Force</i></h4>
+        <p>
+            Class-based Online Team Shooter on Android and iOS, built with Unity and Photon Quantum. First assisted with prototyping and joined production as a Programming Generalist.
+        </p>
+        <h4><a href="https://criticalopsgame.com/">Critical Ops 🔗</a>, <i>Critical Force</i></h4>
+        <p>
+            Tactical Online First-person Shooter on Android and iOS, with a long legacy built with Unity. Joined as a Programming Generalist implementing Full-stack features.
+        </p>
+        <h4><a href="https://transitkingtycoon.com/">Transit King Tycoon 🔗</a>, <i>BON Games</i></h4>
+        <p>
+            Logistic Tycoon Game on Android and iOS, built with Unity. Joined as a Client-side Developer and implemented features where-ever necessary.
+        </p>
+        <p class="w3-center">
+            <i>...in addition to the unannounced projects.</i> 🙊
+        </p>
+        <hr />
+
+        <h3 class="w3-center">BEFORE GRADUATION</h3>
+        <p class="w3-center"><i>Click on the images for a look-see.</i></p>
+
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m4 w3-margin-bottom">
+                <a href="Image/portfolio/thesis.png">
+                    <img src="Image/portfolio/thesis.png" class="w3-hover-opacity pitem">
+                </a>
+                <h3>Thesis</h3>
+                <p>
+                    In December 2020 I submitted my thesis on procedural level generation using cube marching. It is
+                    freely available on <a href="http://urn.fi/URN:NBN:fi:amk-2020120125502">Theseus.fi</a>, the
+                    document is in finnish.
+                </p>
+                <p>
+                    The thesis involved me doing research on the cube marching algorithm and programming an example script for
+                    Unity.
+                </p>
+            </div>
+
+            <div class="w3-col m4 w3-margin-bottom">
+                <a href="Video/dashbotninja.webm">
+                    <video autoplay muted loop class="w3-hover-opacity pitem">
+                        <source src="Video/dashbotninja.webm" type="video/webm">
+                    </video>
+                </a>
+                <h3>Dashbot Ninja</h3>
+                <p>
+                    The project I worked on during the summer 2019. Game is about dashing through robotic enemies in
+                    varied hazardous enviroments combining casual fun and hardcore action. The game took part in
+                    Assembly Summer 2019's game dev competition placing 4th!
+                </p>
+                <p>
+                    The game is available for download on on <a href="https://store.steampowered.com/app/1193950/Dashbot_Ninja">Steam</a> and previously on
+                    Google Play!
+                </p>
+                <p>
+                    I contributed game design and programming. Made with Unity.
+                </p>
+            </div>
+
+            <div class="w3-col m4 w3-margin-bottom">
+                <a href="Video/frog_out.mp4">
+                    <video autoplay muted class="w3-hover-opacity pitem">
+                        <source src="Video/frog_out.mp4" type="video/mp4">
+                    </video>
+                </a>
+                <h3>Frog Out!</h3>
+                <p>
+                    As it states on the <a href="https://store.steampowered.com/app/921720/Frog_Out/">
+                        Steam
+                        storepage
+                    </a>: "Frog Out! is a wacky local multiplayer party game for up to 4 players." It
+                    features three different gamemodes, plenty of frog skins to choose from and wacky couch game fun.
+                </p>
+                <p>
+                    Frog Out! is my first commercial release. I did programming in the game's development team working
+                    on live updates, mobile port and online play.
+                </p>
+                <p>
+                    Made with Unreal Engine.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m4 w3-margin-bottom">
+                <a href="Video/roncolt.mp4">
+                    <video autoplay muted class="w3-hover-opacity pitem">
+                        <source src="Video/roncolt.mp4" type="video/mp4">
+                    </video>
+                </a>
+                <h3>Ron Colt</h3>
+                <p>
+                    The game was produced during the autumn 2019. In it you take the role of Ron Colt in a twisted stage
+                    play of the same name. Onstage mayhem and bizarre power-ups coming your way!
+                </p>
+                <p>
+                    I was wholly dedicated to designing and producing the game.
+                </p>
+                <p>
+                    Made with Unity.
+                </p>
+            </div>
+
+            <div class="w3-col m4 w3-margin-bottom">
+                <iframe src="https://www.youtube-nocookie.com/embed/WQzRONCU8gE"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen class="pitem"></iframe>
+                <h3>Selene</h3>
+                <p>
+                    Selene is a 2.5D puzzle exploration game focused on the eviromental storytelling and
+                    exploration. The game was in the works during the spring of 2019. I worked both as the story writer
+                    and the level & puzzle designer of the game.
+                </p>
+                <p>
+                    Made with Unity.
+                </p>
+            </div>
+
+            <div class="w3-col m4 w3-margin-bottom">
+                <a href="Video/bumperballs.webm">
+                    <video autoplay muted loop class="w3-hover-opacity pitem">
+                        <source src="Video/bumperballs.webm" type="video/webm">
+                    </video>
+                </a>
+                <h3>Bumper Balls</h3>
+                <p>
+                    A game I made solo practising AI scripting and network programming in 2019.
+                </p>
+                <p>
+                    Bumper Balls features a client-server system, AI opponents and tranquil programmer art. I've
+                    made its GitHub repo public, check it out <a href="https://github.com/AnssiRem/bumper-balls">here</a>!
+                </p>
+                <p>
+                    Game client made with Unity and the independent server program with just Visual Studio.
+                </p>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m4 w3-margin-bottom">
+                <a href="Video/mymobileproject.webm">
+                    <video autoplay muted loop class="w3-hover-opacity pitem">
+                        <source src="Video/mymobileproject.webm" type="video/webm">
+                    </video>
+                </a>
+                <h3>Android game</h3>
+                <p>
+                    A minimalistic experiment on mobile development during spring of 2019. The game utilizes mobile
+                    phone's camera, microphone and gyroscope.
+                </p>
+                <p>
+                    Made with Android Studio.
+                </p>
+            </div>
+
+            <div class="w3-col m4 w3-margin-bottom">
+                <a href="Video/pluto.webm">
+                    <video autoplay muted loop class="w3-hover-opacity pitem">
+                        <source src="Video/pluto.webm" type="video/webm">
+                    </video>
+                </a>
+                <h3>Pluto</h3>
+                <p>
+                    A vertical slice of a turn-based RPG featuring carnage and special abilites on six tactical
+                    lanes of combat. On Pluto I spent my time programming the core combat system. Made in 2018.
+                </p>
+                <p>
+                    Made with Unity.
+                </p>
+            </div>
+
+            <div class="w3-col m4 w3-margin-bottom">
+                <a href="Image/portfolio/jams.jpg">
+                    <img src="Image/portfolio/jams.jpg" class="w3-hover-opacity pitem">
+                </a>
+                <h3>Game jam games</h3>
+                <p>
+                    I have partook in multiple jam events that have always been a pleasant way to spend a weekend
+                    concentrating on the most fun aspects of game making.
+                </p>
+                <p>
+                    Here are some GGJ submissions:<br>
+                    <a href="https://globalgamejam.org/2020/games/rough-day-5">Pothole Patcher</a><br>
+                    <a href="https://globalgamejam.org/2019/games/nothing-eat">Nothing to Eat :(</a><br>
+                    <a href="https://globalgamejam.org/2021/games/glider-cave-exploration-demo-3">Glidern</a>
+                </p>
+
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m4 w3-margin-bottom">
+                <a href="Image/portfolio/maus.jpg">
+                    <img src="Image/portfolio/maus.jpg" class="w3-hover-opacity pitem">
+                </a>
+                <h3>Source maps</h3>
+                <p>
+                    Over a decade ago I got my earliest experiences of game development making maps for source games
+                    like Counter-Strike, Half-Life 2 and Garry's Mod using the Hammer Editor.
+                </p>
+            </div>
+
+            <div class="w3-col m4 w3-margin-bottom">
+                <a href="Image/portfolio/cabin.jpg">
+                    <img src="Image/portfolio/cabin.jpg" class="w3-hover-opacity pitem">
+                </a>
+                <p>
+                    Eventually my earliest dabblings evolved into a workflow of my own, even allowing me to model my
+                    friend's lodge by heart.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ██████  ██████  ███    ██ ████████  █████   ██████ ████████
+        ██      ██    ██ ████   ██    ██    ██   ██ ██         ██
+        ██      ██    ██ ██ ██  ██    ██    ███████ ██         ██
+        ██      ██    ██ ██  ██ ██    ██    ██   ██ ██         ██
+         ██████  ██████  ██   ████    ██    ██   ██  ██████    ██     -->
+    <!-- Third Parallax Image with Contact Text -->
+    <div class="bgimg-3 w3-display-container">
+        <div class="w3-display-middle">
+            <h1 class="w3-xxlarge w3-text-white w3-wide">CONTACT</h1>
+        </div>
+    </div>
+
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <h3 class="w3-center">Let's get in touch!</h3>
+        <p class="w3-center">
+            At the time I'm not giving out my email address online, but it is highly likely I was
+            the
+            one who contacted
+            you.<br>
+            You can contact me via any of my social media.
+            <b><i>Just click the icons down below!</i></b>
+        </p>
+        <p class="w3-center">Make sure to include a message with your initial contact!</p>
+
+        <div class="w3-row w3-center">
+            <div class="w3-col m4">
+                <a href="https://www.facebook.com/remesanssi">
+                    <img class="social"
+                         src="Image/contact/facebook.png" />
+                </a>
+            </div>
+            <div class="w3-col m4">
+                <a href="https://github.com/anssirem"><img class="social" src="Image/contact/github.png" /></a>
+            </div>
+            <div class="w3-col m4">
+                <a href="https://www.linkedin.com/in/anssiremes/">
+                    <img class="social"
+                         src="Image/contact/linkedin.png" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ███████  ██████   ██████  ████████ ███████ ██████
+         ██      ██    ██ ██    ██    ██    ██      ██   ██
+         █████   ██    ██ ██    ██    ██    █████   ██████
+         ██      ██    ██ ██    ██    ██    ██      ██   ██
+         ██       ██████   ██████     ██    ███████ ██   ██  -->
+
+    <footer class="w3-center w3-dark-gray w3-padding-16 w3-opacity w3-hover-opacity-off">
+        <a href="#home" class="w3-button w3-light-grey">&#8593 To the top &#8593</a>
+        <p style="text-align: center;">
+            Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS"
+                          target="_blank" class="w3-hover-text-green">w3.css</a>
+        </p>
+    </footer>
+
+    <script>
+        // Change style of navbar on scroll
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        function myFunction() {
+            var navbar = document.getElementById("myNavbar");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-dark-gray";
+            } else {
+                navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-dark-gray", "");
+            }
+        }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function toggleFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
